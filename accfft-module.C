@@ -1,6 +1,7 @@
 #include <accfft_gpu.h>
 #include <cuda_runtime_api.h>
 #include <mpi.h>
+
 #define CHECK_CUDA(call)                                                      \
 {                                                                              \
      cudaError_t err;                                                          \
