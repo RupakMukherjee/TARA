@@ -1,5 +1,5 @@
 PROGRAM rupak
-! To run the code: gfortran -I/usr/local/include -L/usr/local/lib apmisra.f95 -lfftw3 -lm; ./a.out
+! To run the code: gfortran -I/usr/local/include -L/usr/local/lib <program_name>.f95 -lfftw3 -lm; ./a.out
 implicit none
 
 integer ( kind = 4 ), parameter :: Nx = 64
