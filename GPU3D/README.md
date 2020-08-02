@@ -1,3 +1,6 @@
+Multi GPU Card Script
+===============================================
+
 module load PrgEnv/PGI+OpenMPI/2018-03-29
 module load pgi
 module load cuda
