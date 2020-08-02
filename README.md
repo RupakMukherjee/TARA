@@ -1,3 +1,13 @@
-# Navier-Stokes
+Navier-Stokes
+===============================================
 
-Multi dimensional Navier-Stokes Equation solver in Vorticity Stream Function Method using Pseudo-spectral algorithm.
+Multi dimensional Navier-Stokes Equation solver using Pseudo-spectral algorithm.
+
+
+Contributors
+------------
+
+Developers:
+
+- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, weighting schemes, overall maintainance
+
