@@ -9,5 +9,5 @@ Contributors
 
 Developers:
 
-- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, weighting schemes, overall maintainance
+- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintainance
 
