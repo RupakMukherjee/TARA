@@ -6,6 +6,11 @@ An GPU Parallel (NVIDIA CUDA) Benchmarked Three Dimensional Compressible Viscous
 
 Instructions
 ------------
+### Prerequisites
+- [Nvidia CUDA Compiler (NVCC)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
+- [PGI Community Edition](https://www.pgroup.com/products/community.htm)
+- General Purpose Compilers (GCC/GFORTRAN)
+
 ### Compilation on [Nvidia Tesla P100](https://www.nvidia.com/en-us/data-center/tesla-p100/)
 ```shell
 nvcc  -gencode arch=compute_70,code=sm_70 -c cufft3D.cu
