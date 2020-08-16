@@ -531,17 +531,17 @@ do i = 1,Nx/2+1
   do j = 1,Ny/2  
     kx = 2.0d0*pi*dfloat(i-1)/Lx
     ky = 2.0d0*pi*dfloat(j-1)/Ly
-    NLk_1(i,j) = ( NLkx_1(i,j) + NLky_1(i,j) ) + nux_1*(omegak_1(i,j) - omegak_2(i,j))
+    NLk_1(i,j) = ( NLkx_1(i,j) + NLky_1(i,j) ) + (omegak_1(i,j) - omegak_2(i,j))
     Nlk_1(i,j) = NLk_1(i,j) + (nux_1*kx*kx + nuy_1*ky*ky)*omegak_1(i,j)
-    NLk_2(i,j) = ( NLkx_2(i,j) + NLky_2(i,j) ) + nux_1*(omegak_2(i,j) - omegak_1(i,j))
+    NLk_2(i,j) = ( NLkx_2(i,j) + NLky_2(i,j) ) + (omegak_2(i,j) - omegak_1(i,j))
     Nlk_2(i,j) = NLk_2(i,j) + (nux_2*kx*kx + nuy_2*ky*ky)*omegak_2(i,j)
   end do ! j
   do j = Ny/2+1,Ny  
     kx = 2.0d0*pi*dfloat(i-1)/Lx
     ky = 2.0d0*pi*dfloat((j-1)-Ny)/Ly
-    NLk_1(i,j) = ( NLkx_1(i,j) + NLky_1(i,j) ) + nux_1*(omegak_1(i,j) - omegak_2(i,j))
+    NLk_1(i,j) = ( NLkx_1(i,j) + NLky_1(i,j) ) + (omegak_1(i,j) - omegak_2(i,j))
     Nlk_1(i,j) = NLk_1(i,j) + (nux_1*kx*kx + nuy_1*ky*ky)*omegak_1(i,j)
-    NLk_2(i,j) = ( NLkx_2(i,j) + NLky_2(i,j) ) + nux_1*(omegak_2(i,j) - omegak_1(i,j))
+    NLk_2(i,j) = ( NLkx_2(i,j) + NLky_2(i,j) ) + (omegak_2(i,j) - omegak_1(i,j))
     Nlk_2(i,j) = NLk_2(i,j) + (nux_2*kx*kx + nuy_2*ky*ky)*omegak_2(i,j)
   end do ! j
 end do ! i
