@@ -5,7 +5,7 @@ implicit none
 
 include "fftw3.f"
 
-integer ( kind = 4 ), parameter :: N = 128
+integer ( kind = 4 ), parameter :: N = 512
 integer ( kind = 4 ), parameter :: Nh = N/2+1
 real ( kind = 8 ), parameter :: pi=3.14159265358979323846d0
 	
@@ -15,7 +15,7 @@ DIMENSION x(N),u(N),a(N),du_dt(N),d2u_dt2(N),GRn(N)
 integer ( kind = 8 ) :: planf, planb
 
 integer ( kind = 4) i,t
-REAL ( kind = 8 ) :: time, time_min, time_max, dt, dx, L, k, sum
+REAL ( kind = 8 ) :: time, time_min, time_max, dt, dx, L, k, sum, Energy
 REAL ( kind = 8 ) :: URn_1, URn_2, delta, sigma, mu
 
 COMMON/comm/L, dx, dt, delta
@@ -24,16 +24,17 @@ integer,parameter :: seed = 99999999
 CALL srand(seed)
 
 !===================== USER INPUTS ============================================		
+
 L = 2.0d0*pi
 dx = L/dfloat(N)
 
 time_min = 0.00d0
-time_max = 500.0d0
+time_max = 1000.0d0
 dt = 0.010d0
 
 k = 1.0d0
 
-delta = 0.05d0
+delta = 0.01d0
 
 sigma = 0.10d0
 
@@ -41,8 +42,8 @@ mu = 0.0d0
 
 do i=1,N
   x(i) = dfloat(i-1) * dx
-  u(i) = DSIN(k*x(i))
-  a(i) = -k * DCOS(k*x(i))
+  u(i) = dsin(k*x(i))
+  a(i) = k * dcos(k*x(i))
   write (100,*) 0, x(i), u(i)
 enddo
 
@@ -51,14 +52,17 @@ enddo
 DO time = time_min, time_max, dt
 
 sum = 0.0d0
-   
+Energy = 0.0d0
+
 t = nint(time/dt) - int(time_min/dt)
 
 !Calculating the time evolution in real-space...
 
 DO i = 1, N
-  URn_1 = rand()
-  URn_2 = rand()
+10  URn_1 = rand()
+  if (URn_1 == 0.0d0) goto 10 
+20  URn_2 = rand()
+  if (URn_2 == 0.0d0) goto 20
   GRn(i) = DSQRT(-2.0d0*DLOG(URn_1)) * DCOS(2.0d0*pi*URn_2) * sigma + mu
 ENDDO
 
@@ -67,18 +71,19 @@ CALL rk4(N, Nh, pi, time, u, a, du_dt, d2u_dt2)
 
 !PRINT*, "Printing Data"
 
-IF ( t /= 0 .and. MOD(t,1000) == 0 ) THEN
-   DO i = 1, N
-    WRITE (t+100,*) t, x(i),u(i),a(i)
-  enddo
-endif
+!IF ( t /= 0 .and. MOD(t,1000) == 0 ) THEN
+!   DO i = 1, N
+!    WRITE (t+100,*) t, x(i),u(i),a(i)
+!  enddo
+!endif
 
-IF ( MOD(t,100) == 0 ) THEN
+!IF ( MOD(t,1) == 0 ) THEN
   DO i = 1, N
-    sum = sum + u(i) * u(i) / dfloat(N)  
+    sum = sum + u(i) / dfloat(N)  
+    Energy = Energy + u(i) * u(i) / dfloat(N)  
   ENDDO
-  WRITE(10,*) time, sum
-ENDIF
+  WRITE(10,*) time, Energy-abs(sum), Energy, sum 
+!ENDIF
 
 enddo ! time
 
@@ -120,7 +125,7 @@ enddo
 DO i = 1, N
   !PRINT*, time, i, GRn(i)
   du_dt(i) = a(i) 
-  d2u_dt2(i) = - (1.0d0 + delta * GRn(i)) * d2u_dx2(i)
+  d2u_dt2(i) = - (1.0d0 - delta * GRn(i)) * d2u_dx2(i)
 enddo
 
 return
