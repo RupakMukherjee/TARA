@@ -5,33 +5,37 @@ implicit none
 
 include "fftw3.f"
 
-integer ( kind = 4 ), parameter :: N = 64
+integer ( kind = 4 ), parameter :: N = 128
 integer ( kind = 4 ), parameter :: Nh = N/2+1
 real ( kind = 8 ), parameter :: pi=3.14159265358979323846d0
 	
-DOUBLE PRECISION :: x,u,a,du_dt,d2u_dt2
-DIMENSION x(N),u(N),a(N),du_dt(N),d2u_dt2(N)
+DOUBLE PRECISION :: x,u,a,du_dt,d2u_dt2,GRn
+DIMENSION x(N),u(N),a(N),du_dt(N),d2u_dt2(N),GRn(N)
 
 integer ( kind = 8 ) :: planf, planb
 
 integer ( kind = 4) i,t
-REAL ( kind = 8 ) :: time, time_min, time_max, dt, dx, L, k, sum, delta, sigma, mu
+REAL ( kind = 8 ) :: time, time_min, time_max, dt, dx, L, k, sum
+REAL ( kind = 8 ) :: URn_1, URn_2, delta, sigma, mu
 
-COMMON/comm/L, dx, dt, delta, sigma, mu
+COMMON/comm/L, dx, dt, delta
+
+integer,parameter :: seed = 99999999
+CALL srand(seed)
 
 !===================== USER INPUTS ============================================		
 L = 2.0d0*pi
 dx = L/dfloat(N)
 
 time_min = 0.00d0
-time_max = 100.00d0
+time_max = 500.0d0
 dt = 0.010d0
 
 k = 1.0d0
 
-delta = 0.001d0
+delta = 0.05d0
 
-sigma = 1.0d0
+sigma = 0.10d0
 
 mu = 0.0d0
 
@@ -51,17 +55,25 @@ sum = 0.0d0
 t = nint(time/dt) - int(time_min/dt)
 
 !Calculating the time evolution in real-space...
-	
-CALL derive(N, Nh, pi, time, u, a, du_dt, d2u_dt2)
+
+DO i = 1, N
+  URn_1 = rand()
+  URn_2 = rand()
+  GRn(i) = DSQRT(-2.0d0*DLOG(URn_1)) * DCOS(2.0d0*pi*URn_2) * sigma + mu
+ENDDO
+
+CALL derive(N, Nh, pi, time, GRn, u, a, du_dt, d2u_dt2)
 CALL rk4(N, Nh, pi, time, u, a, du_dt, d2u_dt2)
 
-IF ( t /= 0 .and. MOD(t,100) == 0 ) THEN
+!PRINT*, "Printing Data"
+
+IF ( t /= 0 .and. MOD(t,1000) == 0 ) THEN
    DO i = 1, N
-    !WRITE (t+100,*) t, x(i),u(i),a(i)
+    WRITE (t+100,*) t, x(i),u(i),a(i)
   enddo
 endif
 
-IF ( MOD(t,1) == 0 ) THEN
+IF ( MOD(t,100) == 0 ) THEN
   DO i = 1, N
     sum = sum + u(i) * u(i) / dfloat(N)  
   ENDDO
@@ -73,19 +85,16 @@ enddo ! time
 contains
 !===================================================================================
 
-SUBROUTINE derive(N, Nh, pi, time, u, a, du_dt, d2u_dt2)
+SUBROUTINE derive(N, Nh, pi, time, GRn, u, a, du_dt, d2u_dt2)
 
 implicit none
 
 INTEGER ( kind = 4 ) N, Nh, i
-REAL ( kind = 8 ) pi, time, dt, dx, L, k, URn_1, URn_2, GRn, delta, sigma, mu
-REAL ( kind = 8 ) u(N), u_dum(N), d2u_dx2(N), du_dt(N), a(N), d2u_dt2(N)
+REAL ( kind = 8 ) pi, time, dt, dx, L, k, delta
+REAL ( kind = 8 ) u(N), u_dum(N), d2u_dx2(N), du_dt(N), a(N), d2u_dt2(N), GRn(N) 
 complex ( kind = 8 )  uk(Nh), k2_uk(Nh)
 
-common/comm/L, dx, dt, delta, sigma, mu
-
-integer,parameter :: seed = 99999999
-CALL srand(seed)
+common/comm/L, dx, dt, delta
 
 do i = 1, N
   u_dum(i) = u(i)
@@ -109,11 +118,9 @@ do i = 1, N
 enddo
   
 DO i = 1, N
-  URn_1 = rand()
-  URn_2 = rand()
-  GRn = DSQRT(-2.0d0*DLOG(URn_1)) * DCOS(2.0d0*pi*URn_2) * sigma + mu
+  !PRINT*, time, i, GRn(i)
   du_dt(i) = a(i) 
-  d2u_dt2(i) = - (1.0d0 + delta * GRn) * d2u_dx2(i)
+  d2u_dt2(i) = - (1.0d0 + delta * GRn(i)) * d2u_dx2(i)
 enddo
 
 return
@@ -125,12 +132,13 @@ SUBROUTINE rk4(N, Nh, pi, time, u, a, du_dt, d2u_dt2)
 implicit none
 
 INTEGER ( kind = 4 ) N, Nh, i
-REAL ( kind = 8 ) pi, time, dt, dx, L, delta, sigma, mu
+REAL ( kind = 8 ) pi, time, dt, dx, L, delta
 REAL ( kind = 8 ) u(N),du_dt(N),k1_u(N),k2_u(N),k3_u(N),k4_u(N),dum_u(N)
 REAL ( kind = 8 ) a(N),d2u_dt2(N),k1_a(N),k2_a(N),k3_a(N),k4_a(N),dum_a(N)
 
+common/comm/L, dx, dt, delta
 
-common/comm/L, dx, dt, delta, sigma, mu
+!PRINT*, "RKIdx = 1"
 
 do i = 1, N
   k1_u(i) = du_dt(i)
@@ -142,7 +150,9 @@ do i = 1, N
   dum_a(i) = a(i) + k1_a(i) * dt / 2.0d0
 enddo
 
-CALL derive(N, Nh, pi, time+dt/2.0d0, dum_u, dum_a, du_dt, d2u_dt2)
+CALL derive(N, Nh, pi, time+dt/2.0d0, GRn, dum_u, dum_a, du_dt, d2u_dt2)
+
+!PRINT*, "RKIdx = 2"
 
 do i = 1, N
   k2_u(i) = du_dt(i)
@@ -154,7 +164,9 @@ do i = 1, N
   dum_a(i) = a(i) + k2_a(i) * dt/2.0d0
 enddo
 
-CALL derive(N, Nh, pi, time+dt/2.0d0, dum_u, dum_a, du_dt, d2u_dt2)
+CALL derive(N, Nh, pi, time+dt/2.0d0, GRn, dum_u, dum_a, du_dt, d2u_dt2)
+
+!PRINT*, "RKIdx = 3"
 
 do i = 1, N
   k3_u(i) = du_dt(i)
@@ -166,7 +178,9 @@ do i = 1, N
   dum_a(i) = a(i) + k3_a(i) * dt
 enddo
 
-CALL derive(N, Nh, pi, time+dt, dum_u, dum_a, du_dt, d2u_dt2)
+CALL derive(N, Nh, pi, time+dt, GRn, dum_u, dum_a, du_dt, d2u_dt2)
+
+!PRINT*, "RKIdx = 4"
 
 do i = 1, N
   k4_u(i) = du_dt(i)
