@@ -1,3 +1,5 @@
+This version contains building with makefiles and this works. Though only 2 files.
+
 !
 ! Rupak, IPR, August 6, 2017
 !
