@@ -1,0 +1,32 @@
+*Number of Threads to be executed for OpenMP Paralalization.
+Number of Threads (threads)       = 32.0d0
+
+*System Size
+Lx/pi                             = 2.0d0
+Ly/pi                             = 2.0d0
+Lz/pi                             = 2.0d0 
+
+*Runtime Details and Time Step Width.
+Start Time                        = 0.0d0
+End Time                          = 0.01d0
+Time Step                         = 0.0010d0 
+   
+Ratio of Specific Heats (spheat)  = 1.6670d0
+
+Co-efficient of Viscosity (nu)    = 0.010d0
+
+Co-efficient of Resistivity (eta) = 0.01d0
+
+Magnetic Permiability (mu_0)      = 1.0d0
+
+Mass of the Fluid Element (ms)    = 1.0d0
+
+Background Density (rho0)         = 1.0d0
+
+Initial Pressure (P0)             = 1.0d0
+
+Mach Number (M)                   = 0.050d0
+
+Alfven Mach Number (MA)           = 5.0d0
+
+Forcing Length Scale (kf)         = 4.0d0
