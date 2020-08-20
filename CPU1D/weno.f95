@@ -1,4 +1,5 @@
 program weno
+
 implicit none
 
 integer, parameter :: N = 128
