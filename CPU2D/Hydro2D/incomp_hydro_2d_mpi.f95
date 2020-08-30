@@ -81,6 +81,8 @@ Rey = 10000.00
 nux = 1.0d0/Rex
 nuy = 1.0d0/Rey
 
+PRINT*, nproc, myid
+
 ! Initial Parameters.
 W0 = 2.0d0
 m = 3.0d0
@@ -254,7 +256,7 @@ end do ! i
 ! Move to Spectral Space.
   do i = 1, Nx
     do j = 1, local_Ny
-      idata(i, j) = ux_domega_dx(i, j + local_j_offset)
+      idata(i, j) = ux_domega_dx(i, j)! + local_j_offset)
     end do
   end do
 
@@ -268,7 +270,7 @@ end do ! i
 
   do i = 1, Nx
     do j = 1, local_Ny
-      idata(i, j) = uy_domega_dy(i, j + local_j_offset)
+      idata(i, j) = uy_domega_dy(i, j)! + local_j_offset)
     end do
   end do
 
@@ -395,6 +397,10 @@ write(5,*) "Elapsed time is", t2 - t1
   call fftw_free(cdatar)
   call fftw_free(cdatac)
 
+  ! FINALIZE MPI
+
+  CALL MPI_FINALIZE(IERR)
+  
 !====================================================================================
 
 end program rupak  
