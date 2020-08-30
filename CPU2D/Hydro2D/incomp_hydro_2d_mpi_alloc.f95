@@ -433,7 +433,7 @@ endif
   
 end do ! time
 
-t2 = MPI_Wtime()
+if (myid .eq. root) t2 = MPI_Wtime()
 
 if (myid == root) then  
   write(5,*) "Elapsed time is", t2 - t1
