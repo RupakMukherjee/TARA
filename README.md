@@ -1,7 +1,7 @@
 Navier-Stokes
 ===============================================
 
-Multi dimensional Navier-Stokes Equation solver using Pseudo-spectral algorithm.
+Multi dimensional Navier-Stokes Equation solver using pseudo-spectral algorithm.
 
 
 Contributors
