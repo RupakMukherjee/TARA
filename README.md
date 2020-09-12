@@ -1,4 +1,4 @@
-Navier-Stokes
+TARA
 ===============================================
 
 Multi dimensional Navier-Stokes equation solver using pseudo-spectral algorithm.
