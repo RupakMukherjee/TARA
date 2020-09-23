@@ -1,4 +1,10 @@
-// 1-d FLUID solver using WENO(Weighted Essentially Non-Oscillatory) algorithm.
+/*
+** 1-D FLUID solver using WENO(Weighted Essentially Non-Oscillatory) algorithm**
+@file                weno_advection.cpp
+@author              Sayan Adhikari <sayan.adhikari@fys.uio.no>
+@source              Rupak Mukherjee <rupakmukherjee06@gmail.com>
+@date                23.09.2020
+*/
 
 #include <cstdlib>
 #include <iostream>
