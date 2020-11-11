@@ -10,7 +10,7 @@ Contributors
 Developers:
 
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
-- [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): maintenance
+- [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
 
 Installation
 ------------
