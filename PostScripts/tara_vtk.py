@@ -1,10 +1,11 @@
 """
-** Transforming PINC output data from HDF5 to VTK format **
+** Transforming TARA output data from ASCII to VTK format **
 Requires: PyEVTK (Python Script to Export VTK)
 		  EVTK (Export VTK) package allows exporting data to binary VTK files for visualization
 		  and data analysis
-@file                HDF52VTK.py
+@file                tara_vtk.py
 @author              Sayan Adhikari <sayan.adhikari@fys.uio.no>
+                     Rupak Mukherjee <rupakm@princeton.edu>
 Instruction for installation:
 =============================
 git clone https://github.com/paulo-herrera/PyEVTK.git
