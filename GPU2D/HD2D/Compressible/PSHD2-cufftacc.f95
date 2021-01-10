@@ -68,10 +68,10 @@
 !
 !------------------------------------------------------------------------------------------------------------------------ 
 !#############################################################################################################
-!This is a fft based Serial Incompressible Hydrodynamic (2D) solver.
+!This is a fft based Serial Compressible Hydrodynamic (2D) solver.
 !Developer: Dr.Rupak Mukherjee (IPR Phd 2019) 
 !GPU Accleration is given by : Mr. Shishir Biswas (IPR Phd)
-!Benchmarking Problem: KH Instability by: PG Drazin. Discontinuous velocity profiles for the orr-sommerfeld equation. Journal of Fluid Mechanics, 10(4):571–583, 1961.
+!Benchmarking Problem: Rupak Mukherjee, Akanksha Gupta, Rajaraman Ganesh, arXiv:1802.03240; Physica Scripta, 2019
 !Date: 13/07/2020
 !#############################################################################################################
 
