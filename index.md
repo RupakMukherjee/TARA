@@ -1,4 +1,4 @@
-##TARA
+## TARA
 
 Multi dimensional Navier-Stokes equation solver using pseudo-spectral and WENO algorithms for spatial discretization and explicit time iterators.
 
