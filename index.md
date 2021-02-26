@@ -10,6 +10,7 @@ Developers:
 
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
 - [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
+- [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
 
 Installation
 ------------
