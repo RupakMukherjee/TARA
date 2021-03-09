@@ -1,20 +1,17 @@
-## TARA
+# TARA
 
 The TARA simulation architechture is a multi-dimensional pseudo-spectral solver for weakly compressible and incompressible magneto-hydrodynamic flows. TARA is flexible for adding higher order fluid-moment equations with minimal computational overhead. This framework runs efficiently on GPU architechture. In addition, the performance scales efficiently under MPI on massively parallel shared- or distributed-memory computers.
 
 The TARA simulation framework have been used for many different applications in astrophysical studies as well as terrestrial laboratory plasma simulations.
 
-Contributors
-------------
-
-Developers:
+## Contributors
 
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
 - [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
 - [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
 
-Installation
-------------
+## Installation
+
 #### Common Prerequisites for CPU version
 1. [GNU Compiler (higher than version 4.0.0)](https://gcc.gnu.org/)
 2. [OpenMP](https://www.openmp.org/) and [MPI](https://www.open-mpi.org/) architechture
@@ -33,24 +30,24 @@ Installation
 3. [AccFFT library](http://accfft.org/about/)
 4. [git](https://git-scm.com/)
 
-Directory Details
------------------
-## CPU1D (Serial CPU Code)
+## Directory Details
+
+### CPU1D (Serial CPU Code)
 - 1D Solver for Burgers' Equation. Burgers' equation or Bateman–Burgers equation is a fundamental partial differential equation occurring in various areas of applied mathematics, such as fluid mechanics, nonlinear acoustics, gas dynamics, and traffic flow.
 - Burger_Turbulence_AB.f95: Using Adam Bashforth Solver
 - Burgers_Turbulence_RK4.f95: Using RK-4 Solver
-## CPU2D (CPU Code)
-### Hydro2D (Serial CPU Code)
+### CPU2D (CPU Code)
+#### Hydro2D (Serial CPU Code)
 A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Pseudo-Spectral Method for Spatial Discritisation and Adams-Bashforth Technique for time evolution.
-### MHD2D (Parallel CPU Code)
+#### MHD2D (Parallel CPU Code)
 - compressible_mhd2d.f95: An OPENMP Parallel Benchmarked Compressible Viscous Neutral Fluid code, using Pseudo-Spectral Method with Multiple Time Solvers.
 - mhd_parallel.f95: An OPENMP Parallel Benchmarked Two Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
-### Screened (Serial CPU Code)
+#### Screened (Serial CPU Code)
 - kukharkin.f95: (To be updated)
 - kaladze2008_Eq_57and58.f95: (To be updated)
-## CPU3D (Parallel CPU Code)
+### CPU3D (Parallel CPU Code)
 - mhd_3d.f95: An OPENMP Parallel Benchmarked Three Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
-## GPU3D (Parallel GPU Code)
+### GPU3D (Parallel GPU Code)
 ### GMHD3D
 #### large
 - 512 x 512 x 512 grid simulation 
