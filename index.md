@@ -1,5 +1,3 @@
-# TARA
-
 The TARA simulation architechture is a multi-dimensional pseudo-spectral solver for weakly compressible and incompressible magneto-hydrodynamic flows. TARA is flexible for adding higher order fluid-moment equations with minimal computational overhead. This framework runs efficiently on GPU architechture. In addition, the performance scales efficiently under MPI on massively parallel shared- or distributed-memory computers.
 
 The TARA simulation framework have been used for many different applications in astrophysical studies as well as terrestrial laboratory plasma simulations.
