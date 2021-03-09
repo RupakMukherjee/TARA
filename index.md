@@ -2,54 +2,54 @@ The TARA simulation architechture is a multi-dimensional pseudo-spectral solver 
 
 The TARA simulation framework have been used for many different applications in astrophysical studies as well as terrestrial laboratory plasma simulations.
 
-## Contributors
+# Contributors
 
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
 - [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
 - [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
 
-## Installation
+# Installation
 
-#### Common Prerequisites for CPU version
+## Common Prerequisites for CPU version
 1. [GNU Compiler (higher than version 4.0.0)](https://gcc.gnu.org/)
 2. [OpenMP](https://www.openmp.org/) and [MPI](https://www.open-mpi.org/) architechture
 3. [FFTW library (higher than Version 3.3.3)](http://www.fftw.org/)
 4. [git](https://git-scm.com/)
 
-#### Common Prerequisites for single-GPU version
+## Common Prerequisites for single-GPU version
 1. [CUDA Toolkit (higher than CUDA 10.0)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
 2. [PGI Compilers & Tools](https://www.pgroup.com/support/new_rel_80.htm) 
 3. [cuFFT library](https://developer.nvidia.com/cufft)
 4. [git](https://git-scm.com/)
 
-#### Common Prerequisites for multi-GPU version
+## Common Prerequisites for multi-GPU version
 1. [CUDA Toolkit (higher than CUDA 10.0)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
 2. [PGI Compilers & Tools](https://www.pgroup.com/support/new_rel_80.htm) 
 3. [AccFFT library](http://accfft.org/about/)
 4. [git](https://git-scm.com/)
 
-## Directory Details
+# Directory Details
 
-### CPU1D (Serial CPU Code)
+## CPU1D (Serial CPU Code)
 - 1D Solver for Burgers' Equation. Burgers' equation or Bateman–Burgers equation is a fundamental partial differential equation occurring in various areas of applied mathematics, such as fluid mechanics, nonlinear acoustics, gas dynamics, and traffic flow.
 - Burger_Turbulence_AB.f95: Using Adam Bashforth Solver
 - Burgers_Turbulence_RK4.f95: Using RK-4 Solver
-### CPU2D (CPU Code)
-#### Hydro2D (Serial CPU Code)
+## CPU2D (CPU Code)
+### Hydro2D (Serial CPU Code)
 A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Pseudo-Spectral Method for Spatial Discritisation and Adams-Bashforth Technique for time evolution.
-#### MHD2D (Parallel CPU Code)
+### MHD2D (Parallel CPU Code)
 - compressible_mhd2d.f95: An OPENMP Parallel Benchmarked Compressible Viscous Neutral Fluid code, using Pseudo-Spectral Method with Multiple Time Solvers.
 - mhd_parallel.f95: An OPENMP Parallel Benchmarked Two Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
-#### Screened (Serial CPU Code)
+### Screened (Serial CPU Code)
 - kukharkin.f95: (To be updated)
 - kaladze2008_Eq_57and58.f95: (To be updated)
-### CPU3D (Parallel CPU Code)
+## CPU3D (Parallel CPU Code)
 - mhd_3d.f95: An OPENMP Parallel Benchmarked Three Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
-### GPU3D (Parallel GPU Code)
-### GMHD3D
-#### large
+## GPU3D (Parallel GPU Code)
+## GMHD3D
+### large
 - 512 x 512 x 512 grid simulation 
-#### small
+### small
 - 128 x 128 x 128 grid simulation 
 
 
