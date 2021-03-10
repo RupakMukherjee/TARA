@@ -2,13 +2,7 @@ The TARA simulation architechture is a multi-dimensional pseudo-spectral solver 
 
 The TARA simulation framework have been used for many different applications in astrophysical studies as well as terrestrial laboratory plasma simulations.
 
-# Contributors
-
-- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
-- [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
-- [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
-
-# Installation
+# Installing TARA
 
 ## Prerequisites for running on CPU cores/nodes:
 1. [GNU Compiler (higher than version 4.0.0)](https://gcc.gnu.org/)
@@ -29,19 +23,31 @@ The TARA simulation framework have been used for many different applications in 
 4. [PnetCDF library (higher than 1.11.0)](https://parallel-netcdf.github.io/)
 5. [git](https://git-scm.com/)
 
-# Directory Details
+# User Guide
+- TARA user manual is coming soon! Stay tuned [here](documentation.md)!
+
+# Quickstart
 
 1D | 2D | 3D
 ------ | ------ | -----
 [**CPU1D**](cpu1d.md) | [**CPU2D**](cpu2d.md) | [**CPU3D**](cpu3d.md)
 **`TBD`** | [**GPU2D**](gpu2d.md) | [**GPU3D**](gpu3d.md)
 
-# Documentation
-- TARA user manual is coming soon! Stay tuned [here](documentation.md)!
-
-# Publications
+# Publications and Dissertations
 - A list of publications can be found [here](publications.md).
 
+# Presentations
+- A list of conference presentations can be found [here](presentations.md).
+- 
+# Developer Notes
+
+- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
+- [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
+- [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
+
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
 
 
