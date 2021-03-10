@@ -31,15 +31,15 @@ The TARA simulation framework have been used for many different applications in 
 
 # Directory Details
 
-## [CPU1D](cpu1d.md)
+1D | 2D | 3D
+------------ | ------------- | -------------
+[**CPU1D**](cpu1d.md) | [**CPU2D**](cpu2d.md) | [**CPU3D**](cpu3d.md)
+-NA- | [**GPU2D**](gpu2d.md) | [**GPU3D**](gpu3d.md)
 
-## [CPU2D](cpu2d.md)
 
-## [CPU3D](cpu3d.md)
 
-## [GPU2D](gpu2d.md)
 
-## [GPU3D](gpu3d.md)
+
 
 <!--
 ## Welcome to GitHub Pages
