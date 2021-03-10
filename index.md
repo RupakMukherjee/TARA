@@ -38,7 +38,7 @@ The TARA simulation framework have been used for many different applications in 
 
 # Presentations
 - A list of conference presentations can be found [here](presentations.md).
-- 
+
 # Developer Notes
 
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
