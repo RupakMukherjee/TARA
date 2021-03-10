@@ -1,5 +1,5 @@
 # Doctoral Dissertations
-- _Rupak Mukherjee_, "Turbulence, flows and magnetic field generation in plasmas using a magnetohydrodynamic model", PhD Thesis, Institute for Plasma Research, Homi Bhabha National Institute, India
+- _Rupak Mukherjee_, "Turbulence, flows and magnetic field generation in plasmas using a magnetohydrodynamic model", [PhD Thesis](https://drive.google.com/file/d/1fqsPa-scZtkHCOM0A81Hbif24u3D_jRE/view), Institute for Plasma Research, Homi Bhabha National Institute, India
 
 # Algorithms papers
 - _Rupak Mukherjee, Rajaraman Ganesh, Vinod Saini, Udaya Maurya, Nagavijayalakshmi Vydyanathan, Bharatkumar Sharma_, Three Dimensional Pseudo-Spectral Compressible Magnetohydrodynamic GPU Code for Astrophysical Plasma Simulation, [IEEE Conference Proceedings of 25th International Conference on High Performance Computing Workshops (HiPCW), 2018](10.1109/HiPCW.2018.8634104), [arXiv:1810.12707](https://arxiv.org/abs/1810.12707)
