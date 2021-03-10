@@ -17,16 +17,17 @@ The TARA simulation framework have been used for many different applications in 
 4. [git](https://git-scm.com/)
 
 ## Common Prerequisites for single-GPU version
-1. [CUDA Toolkit (higher than CUDA 10.0)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
-2. [PGI Compilers & Tools](https://www.pgroup.com/support/new_rel_80.htm) 
+1. [CUDA Toolkit (higher than CUDA 9.1)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
+2. [PGI Compilers & Tools (higher than 18.1)](https://www.pgroup.com/support/new_rel_80.htm) 
 3. [cuFFT library](https://developer.nvidia.com/cufft)
 4. [git](https://git-scm.com/)
 
 ## Common Prerequisites for multi-GPU version
-1. [CUDA Toolkit (higher than CUDA 10.0)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
-2. [PGI Compilers & Tools](https://www.pgroup.com/support/new_rel_80.htm) 
+1. [CUDA Toolkit (higher than CUDA 9.1)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
+2. [PGI Compilers & Tools (higher than 18.1)](https://www.pgroup.com/support/new_rel_80.htm) 
 3. [AccFFT library](http://accfft.org/about/)
-4. [git](https://git-scm.com/)
+4. [PnetCDF library (higher than 1.11.0)](https://parallel-netcdf.github.io/)
+5. [git](https://git-scm.com/)
 
 # Directory Details
 
