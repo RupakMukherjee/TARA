@@ -1,4 +1,4 @@
-# [CPU2D (CPU Code)]
+# CPU2D (CPU Code)
 ## Hydro2D (Serial CPU Code)
 A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Pseudo-Spectral Method for Spatial Discritisation and Adams-Bashforth Technique for time evolution.
 ## MHD2D (Parallel CPU Code)
