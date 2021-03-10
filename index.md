@@ -31,7 +31,7 @@ The TARA simulation framework have been used for many different applications in 
 
 # Directory Details
 
-## CPU1D (Serial CPU Code)
+## [CPU1D (Serial CPU Code)](cpu1d.md)
 - 1D Solver for Burgers' Equation. Burgers' equation or Bateman–Burgers equation is a fundamental partial differential equation occurring in various areas of applied mathematics, such as fluid mechanics, nonlinear acoustics, gas dynamics, and traffic flow.
 ```markdown
 gfortran -I/usr/include -L/usr/include/lib Burger_Turbulence_AB.f95 -lfftw3 -lm
