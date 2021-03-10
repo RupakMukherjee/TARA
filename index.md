@@ -31,37 +31,15 @@ The TARA simulation framework have been used for many different applications in 
 
 # Directory Details
 
-## [CPU1D (Serial CPU Code)](cpu1d.md)
-- 1D Solver for Burgers' Equation. Burgers' equation or Bateman–Burgers equation is a fundamental partial differential equation occurring in various areas of applied mathematics, such as fluid mechanics, nonlinear acoustics, gas dynamics, and traffic flow.
-```markdown
-gfortran -I/usr/include -L/usr/include/lib Burger_Turbulence_AB.f95 -lfftw3 -lm
-```
-- Burger_Turbulence_AB.f95: Using Adam Bashforth Solver
-- Burgers_Turbulence_RK4.f95: Using RK-4 Solver
+## [CPU1D](cpu1d.md)
 
-## [CPU2D (CPU Code)](cpu2d.md)
-### Hydro2D (Serial CPU Code)
-A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Pseudo-Spectral Method for Spatial Discritisation and Adams-Bashforth Technique for time evolution.
-### MHD2D (Parallel CPU Code)
-- compressible_mhd2d.f95: An OPENMP Parallel Benchmarked Compressible Viscous Neutral Fluid code, using Pseudo-Spectral Method with Multiple Time Solvers.
-- mhd_parallel.f95: An OPENMP Parallel Benchmarked Two Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
-### Screened (Serial CPU Code)
-- kukharkin.f95: (To be updated)
-- kaladze2008_Eq_57and58.f95: (To be updated)
+## [CPU2D](cpu2d.md)
 
-## [CPU3D (Parallel CPU Code)](cpu3d.md)
-- mhd_3d.f95: An OPENMP Parallel Benchmarked Three Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
+## [CPU3D](cpu3d.md)
 
-## [GPU3D (Parallel GPU Code)](gpu3d.md)
+## [GPU2D](gpu2d.md)
 
-## GMHD3D
-
-### large
-- 512 x 512 x 512 grid simulation 
-
-### small
-- 128 x 128 x 128 grid simulation 
-
+## [GPU3D](gpu3d.md)
 
 
 ## Welcome to GitHub Pages
