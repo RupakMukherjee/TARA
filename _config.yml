@@ -1,6 +1,6 @@
 title: TARA
 logo: /assets/img/logo.png
 description: Turbulent Astroplasma Replicator Accessories
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
