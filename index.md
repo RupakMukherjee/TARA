@@ -38,6 +38,7 @@ gfortran -I/usr/include -L/usr/include/lib Burger_Turbulence_AB.f95 -lfftw3 -lm
 ```
 - Burger_Turbulence_AB.f95: Using Adam Bashforth Solver
 - Burgers_Turbulence_RK4.f95: Using RK-4 Solver
+
 ## CPU2D (CPU Code)
 ### Hydro2D (Serial CPU Code)
 A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Pseudo-Spectral Method for Spatial Discritisation and Adams-Bashforth Technique for time evolution.
@@ -47,12 +48,17 @@ A Serial Benchmarked Two Dimensional Incompressible Viscous Fluid code, using Ps
 ### Screened (Serial CPU Code)
 - kukharkin.f95: (To be updated)
 - kaladze2008_Eq_57and58.f95: (To be updated)
+
 ## CPU3D (Parallel CPU Code)
 - mhd_3d.f95: An OPENMP Parallel Benchmarked Three Dimensional Compressible Viscous Resistive MHD code, using Pseudo-Spectral Method with Multiple Time Solvers.
+
 ## GPU3D (Parallel GPU Code)
+
 ## GMHD3D
+
 ### large
 - 512 x 512 x 512 grid simulation 
+
 ### small
 - 128 x 128 x 128 grid simulation 
 
