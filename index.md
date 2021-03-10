@@ -4,6 +4,8 @@ The TARA simulation framework have been used for many different applications in 
 
 # Installing TARA
 
+- A list of prerequisites for running in different computational architechture is provided [here](prerequisites.md)
+
 ## Prerequisites for running on CPU cores/nodes:
 1. [GNU Compiler (higher than version 4.0.0)](https://gcc.gnu.org/)
 2. [OpenMP](https://www.openmp.org/) and [MPI](https://www.open-mpi.org/) architechture
@@ -39,8 +41,7 @@ The TARA simulation framework have been used for many different applications in 
 # Presentations
 - A list of conference presentations can be found [here](presentations.md).
 
-# Developer Notes
-
+# [Developer Notes](dev-notes.md)
 - [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
 - [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
 - [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
