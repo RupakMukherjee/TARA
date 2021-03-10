@@ -36,7 +36,9 @@ The TARA simulation framework have been used for many different applications in 
 [**CPU1D**](cpu1d.md) | [**CPU2D**](cpu2d.md) | [**CPU3D**](cpu3d.md)
 **`TBD`** | [**GPU2D**](gpu2d.md) | [**GPU3D**](gpu3d.md)
 
+# [Documentation](documentation.md)
 
+# [Publications](publications.md)
 
 
 
