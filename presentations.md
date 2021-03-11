@@ -38,4 +38,4 @@
 # Popular Talks
 
 #### 2019:
-1. _Presidency University (07 August, 2019), Ramakrishna Mission Vivekananda Educational and Research Institute (13 August, 2019), Indian Association of Cultivation of Science (14 August, 2019), Kolkata, India._ [Recurrence in Navier-Stokes-Maxwell equations](https://drive.google.com/file/d/1709aRblSW367QRYGBkXGyzvUTL9tnDl4/view)
+1. _Presidency University (07 August, 2019), Ramakrishna Mission Vivekananda Educational and Research Institute (13 August, 2019), Indian Association of Cultivation of Science (14 August, 2019), Kolkata, India._ [Recurrence in Navier-Stokes-Maxwell equations](https://drive.google.com/file/d/1709aRblSW367QRYGBkXGyzvUTL9tnDl4/view), Rupak Mukherjee.
