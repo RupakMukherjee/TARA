@@ -6,6 +6,8 @@
 3. [FFTW library](http://www.fftw.org/) (>= v3.3.3)
 4. [git](https://git-scm.com/)
 
+<br/><br/>
+
 # Installing TARA on GPU
 
 ## Prerequisites for running on one GPU card:
