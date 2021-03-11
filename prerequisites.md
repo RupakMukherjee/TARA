@@ -1,10 +1,12 @@
-# Installing TARA
+# Installing TARA on CPU
 
 ## Prerequisites for running on CPU cores/nodes:
 1. [GNU Compiler](https://gcc.gnu.org/) (>= v4.0.0)
 2. [OpenMP](https://www.openmp.org/) and [MPI](https://www.open-mpi.org/) architechture
 3. [FFTW library](http://www.fftw.org/) (>= v3.3.3)
 4. [git](https://git-scm.com/)
+
+# Installing TARA on GPU
 
 ## Prerequisites for running on one GPU card:
 1. [CUDA Toolkit](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html) (>= v9.1)
