@@ -18,3 +18,6 @@
 - _Turbulence from Angstroms to light years, Discussion Meeting, International Center for Theoretical Sciences - Tata Institute of Fundamental Research, Bangalore, India,_ Compressibility effects on quasistationary vortex and transient hole patterns through vortex merger, January 20 - 25, 2018.
 - _Conference on Plasma Simulations, Department of Physics, Indian Institute of Science, Bangalore, India,_ A New Three Dimensional Pseudo-Spectral Compressible Magnetohydrodynamic GPU Code for Astro-plasma Simulations, January 18 - 19, 2018.
 - _32nd National Symposium on Plasma Science and Technology, Gandhinagar, Gujarat,_ Dynamo Effect In 3D Driven Magnetohydrodynamic Turbulent Plasmas, November 07 - 10, 2017.
+
+# Popular Talks
+- _Presidency University (07 August, 2019), Ramakrishna Mission Vivekananda Educational and Research Institute (13 August, 2019), Indian Association of Cultivation of Science (14 August, 2019), Kolkata, India._ Recurrence in Navier-Stokes-Maxwell equations
