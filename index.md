@@ -4,10 +4,11 @@ The TARA simulation framework have been used for many different applications in 
 
 # Installing TARA
 
-#### A [list of prerequisites](prerequisites.md) for running TARA on different computational architechture.
+A [list of prerequisites](prerequisites.md) for running TARA on different computational architechture.
 
 # User Guide
-#### TARA user manual is coming soon! [Stay tuned!](documentation.md)
+
+TARA user manual is coming soon! [Stay tuned!](documentation.md)
 
 # Quickstart
 
@@ -17,13 +18,16 @@ The TARA simulation framework have been used for many different applications in 
 **`TBD`** | [**GPU2D**](gpu2d.md) | [**GPU3D**](gpu3d.md)
 
 # Visualization Toolkits
-### [Postscripts](visualization.md) to visualize simulation results!
+
+[Postscripts](visualization.md) to visualize simulation results!
 
 # Publications and Dissertations
-#### A complete [list](publications.md) of publications and dissertations.
+
+A complete [list](publications.md) of publications and dissertations.
 
 # Presentations
-#### A complete [list](presentations.md) of conference presentations.
+
+A complete [list](presentations.md) of conference presentations.
 
 # [Developer Notes](dev-notes.md)
 
