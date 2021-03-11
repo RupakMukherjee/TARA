@@ -1,8 +1,8 @@
 # Invited Talks
 - _4th Asia-Pacific Conference on Plasma Physics (AAPPS-DPP2020), Remote e-conference,_ Pattern formation via asymmetric vortex mergers, 29 October, 2020.
+- _3rd Asia-Pacific Conference on Plasma Physics (AAPPS-DPP2019), Hefei, China,_ Recurrence in three dimensional magnetohydrodynamic plasma, 04 November, 2019.
 
 # Contributed Talks
-- _3rd Asia-Pacific Conference on Plasma Physics (AAPPS-DPP2019), Hefei, China,_ Recurrence in three dimensional magnetohydrodynamic plasma, 04 November, 2019.
 - _61st Annual Meeting of the American Physical Society Division of Plasma Physics, Fort Lauderdale, Florida, USA,_ Nonlinear Alfven waves and recurrences in 3D Magnetohydrodynamics, 22 October, 2019.
 - _25th IEEE International Conference on High Performance Computing, Data, and Analytics, Bangalore, India,_ Three Dimensional Pseudo-Spectral Compressible Magnetohydrodynamic GPU Code for Astrophysical Plasma Simulation, 17 December, 2018.
 - _The 33rd National Symposium on Plasma Science & Technology (PLASMA-2018), University of Delhi, India,_ Interplay Between Kinetic and Magnetic Energies in Three Dimensional MagnetoHydroDynamic Plasma, 04 December, 2018.
