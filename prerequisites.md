@@ -10,7 +10,7 @@
 
 # Installing TARA on GPU
 
-## Prerequisites for running on one GPU card:
+## Prerequisites for running on a single GPU card:
 1. [CUDA Toolkit](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html) (>= v9.1)
 2. [PGI Compilers & Tools](https://www.pgroup.com/support/new_rel_80.htm) (>= v18.1)
 3. [cuFFT library](https://developer.nvidia.com/cufft)
