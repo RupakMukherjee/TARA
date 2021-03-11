@@ -1,5 +1,5 @@
 # Visualization Toolkits
 
-TARA Visualization toolkit supports graphical representation in ParaView, Python and GNUPlot.
+TARA Visualization toolkit supports graphical representation in ParaView, Python and Gnuplot.
 
 Postscripts are available [here](../master/PostScripts)
