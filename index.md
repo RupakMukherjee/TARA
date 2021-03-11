@@ -2,19 +2,19 @@ The TARA simulation architechture is a multi-dimensional pseudo-spectral solver 
 
 The TARA simulation framework have been used for many different applications in astrophysical studies as well as terrestrial laboratory plasma simulations.
 
-
+<br/><br/>
 
 # Installing TARA
 
 A [list of prerequisites](prerequisites.md) for running TARA on different computational architechture.
 
-
+<br/><br/>
 
 # User Guide
 
 TARA user manual is coming soon! [Stay tuned!](documentation.md)
 
-
+<br/><br/>
 
 # Quickstart
 
@@ -23,29 +23,29 @@ TARA user manual is coming soon! [Stay tuned!](documentation.md)
 [**CPU1D**](cpu1d.md) | [**CPU2D**](cpu2d.md) | [**CPU3D**](cpu3d.md)
 **`TBD`** | [**GPU2D**](gpu2d.md) | [**GPU3D**](gpu3d.md)
 
-
+<br/><br/>
 
 # Visualization Toolkits
 
 [Postscripts](visualization.md) to visualize simulation results!
 
-
+<br/><br/>
 
 # Publications and Dissertations
 
 A complete [list](publications.md) of publications and dissertations.
 
-
+<br/><br/>
 
 # Presentations
 
 A complete [list](presentations.md) of conference presentations.
 
-
+<br/><br/>
 
 # [Developer Notes](dev-notes.md)
 
-
+<br/><br/>
 
 ![TARA Logo](/assets/img/logo.png)
 <!-- Format: ![Alt Text](url) -->
