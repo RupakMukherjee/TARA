@@ -6,25 +6,6 @@ The TARA simulation framework have been used for many different applications in 
 
 - A list of prerequisites for running in different computational architechture is provided [here](prerequisites.md)
 
-## Prerequisites for running on CPU cores/nodes:
-1. [GNU Compiler (higher than version 4.0.0)](https://gcc.gnu.org/)
-2. [OpenMP](https://www.openmp.org/) and [MPI](https://www.open-mpi.org/) architechture
-3. [FFTW library (higher than Version 3.3.3)](http://www.fftw.org/)
-4. [git](https://git-scm.com/)
-
-## Prerequisites for running on one GPU card:
-1. [CUDA Toolkit (higher than CUDA 9.1)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
-2. [PGI Compilers & Tools (higher than 18.1)](https://www.pgroup.com/support/new_rel_80.htm) 
-3. [cuFFT library](https://developer.nvidia.com/cufft)
-4. [git](https://git-scm.com/)
-
-## Prerequisites for running on multiple GPU cards:
-1. [CUDA Toolkit (higher than CUDA 9.1)](https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html)
-2. [PGI Compilers & Tools (higher than 18.1)](https://www.pgroup.com/support/new_rel_80.htm) 
-3. [AccFFT library](http://accfft.org/about/)
-4. [PnetCDF library (higher than 1.11.0)](https://parallel-netcdf.github.io/)
-5. [git](https://git-scm.com/)
-
 # User Guide
 - TARA user manual is coming soon! Stay tuned [here](documentation.md)!
 
@@ -42,10 +23,6 @@ The TARA simulation framework have been used for many different applications in 
 - A list of conference presentations can be found [here](presentations.md).
 
 # [Developer Notes](dev-notes.md)
-- [Rupak Mukherjee](mailto:rupakmukherjee06@gmail.com): architecture and data structures, pushers, overall maintenance
-- [Sayan Adhikari](mailto:sayanadhikari207@gmail.com): visualization toolkit and maintenance
-- [Shishir Biswas](mailto:shishirbeafriend@gmail.com): benchmarking, visualization toolkit and maintenance
-
 
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
