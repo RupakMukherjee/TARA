@@ -19,25 +19,25 @@ The TARA simulation framework have been used for many different applications in 
 
 # Quickstart
 
-An overview to start your [first TARA simulation](quickstart.md)!
+* An overview to start your [first TARA simulation](quickstart.md)!
 
 <br/><br/>
 
 # Visualization Toolkits
 
-[Postscripts](visualization.md) to visualize simulation results!
+* [Postscripts](visualization.md) to visualize simulation results!
 
 <br/><br/>
 
 # Publications and Dissertations
 
-A complete [list](publications.md) of publications and dissertations.
+* A complete [list](publications.md) of publications and dissertations.
 
 <br/><br/>
 
 # Presentations
 
-A complete [list](presentations.md) of conference presentations.
+* A complete [list](presentations.md) of conference presentations.
 
 <br/><br/>
 
