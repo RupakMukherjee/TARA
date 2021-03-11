@@ -6,8 +6,8 @@ The TARA simulation framework have been used for many different applications in 
 
 # Installing TARA
 
-### A [list of prerequisites](prerequisites.md) for running TARA on different computational architechture.
-### A step-by-step [installation guide](installation.md) for installing TARA on your preferred computational architechture.
+### A [list of prerequisites](prerequisites.md) for running TARA.
+### A step-by-step [installation guide](installation.md) for installing TARA.
 
 <br/><br/>
 
