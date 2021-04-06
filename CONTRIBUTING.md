@@ -1,4 +1,4 @@
-# Contributing to tara2d
+# Contributing to TARA
 We want to make contributing to this project as easy and transparent as possible.
 
 ## Our Development Process
