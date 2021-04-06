@@ -9,7 +9,7 @@ LIB=-L$(LOCAL)/lib
 FFLAGS = -w -lfftw3_threads -lfftw3 -lm
 OMPFLAGS = -O -fopenmp
 
-EXEC=tara2d
+EXEC=tara
 
 SDIR	= src
 ODIR  = src/obj
@@ -31,9 +31,9 @@ OBJ = $(patsubst %,$(ODIR)/%,$(OBJ_))
 all: $(EXEC)
 
 $(EXEC) : $(ODIR)/main.o $(OBJ)
-	@echo "Linking TARA2D"
+	@echo "Linking TARA"
 	@$(F95) $^ -o $@ $(INIFLAG) $(FFLAGS) $(INC) $(LIB) $(OMPFLAGS)
-	@echo "TARA2D is built"
+	@echo "TARA is built"
 	@mkdir -p $(OUTDIR)
 
 $(ODIR)/%.o: $(SDIR)/%.f95
@@ -63,5 +63,5 @@ veryclean: clean
 	@cd $(LDIR)/fftw && $(MAKE) clean > /dev/null 2>&1
 
 run:
-	@echo "Running TARA2D"
-	./tara2d
+	@echo "Running TARA"
+	./tara
