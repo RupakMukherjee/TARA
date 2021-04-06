@@ -15,11 +15,11 @@ First make a clone of the master branch using the following command
 ```shell
 git clone https://github.com/RupakMukherjee/TARA.git
 ```
-Then enter inside the *tara2d* directory 
+Then enter inside the *TARA* directory 
 ```shell
 cd TARA
 ```
-Now complile and built the *tara2d* code
+Now complile and build the *TARA* code
 ```shell
 make subsystems
 ``` 
