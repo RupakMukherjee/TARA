@@ -12,4 +12,4 @@ Dimension | ParaView | VisIt | Python | Gnuplot | Raw Data
 1D | Image | Image | Image | Image | Data 
 
 
-Postscripts are available [here](https://github.com/RupakMukherjee/TARA/tree/master/PostScripts)
+Postscripts are available [here](https://github.com/RupakMukherjee/TARA/tree/archive/PostScripts)
