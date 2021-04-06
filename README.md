@@ -1,6 +1,4 @@
-# tara2d
-
-[![build](https://github.com/RupakMukherjee/tara2d/actions/workflows/main.yml/badge.svg)](https://github.com/RupakMukherjee/tara2d/actions/workflows/main.yml)
+# TARA
 
 Installation
 ------------
@@ -13,11 +11,11 @@ Installation
 #### Procedure
 First make a clone of the master branch using the following command
 ```shell
-git clone https://github.com/RupakMukherjee/tara2d.git
+git clone https://github.com/RupakMukherjee/TARA.git
 ```
 Then enter inside the *tara2d* directory 
 ```shell
-cd tara2d
+cd TARA
 ```
 Now complile and built the *tara2d* code
 ```shell
