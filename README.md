@@ -2,6 +2,10 @@
 
 [![build](https://github.com/RupakMukherjee/TARA/actions/workflows/main.yml/badge.svg)](https://github.com/RupakMukherjee/TARA/actions/workflows/main.yml)
 
+Multi dimensional Navier-Stokes equation solver using pseudo-spectral and WENO algorithms for spatial discretization and explicit time iterators.
+
+A detailed documentation can be found at https://rupakmukherjee.github.io/TARA/
+
 Installation
 ------------
 #### Prerequisites
@@ -33,3 +37,70 @@ Upon successful compilation, run the code using following command
 ```shell
 make run
 ```
+## Parameter Setup
+Edit the _input.ini_ and run the code again. The basic structure of _input.ini_ is provided below,
+
+```ini
+[dimension]
+#Options: 1, 2, 3
+dim = 2
+
+[architecture]
+#Options: cpu, single-gpu, multi-gpu
+arch = cpu
+
+[parallel]
+#Options: serial, openmp, mpi
+mode = serial
+
+[type]
+#Options: hydro, mhd
+domain = hydro
+
+[problem]
+#Options: bare, screen
+hydrotype = screen
+
+[particle]
+Np = 10
+
+[grid]
+Nx = 64
+Ny = 64
+Nz = 64
+
+[length]
+#All lengths will be multiplied by 2\pi.
+Lx = 2.0d0
+Ly = 2.0d0
+Lz = 2.0d0
+
+[resistivity]
+nu = 0.010d0
+eta = 0.0d0
+
+[time]
+time_min = 0.0d0
+time_max = 2.0d0
+dt = 0.00010d0
+
+[initialProfile]
+W0 = 25.0d0
+m0 = 2.0d0
+d = 3.0d0/128.0d0
+
+[initialB]
+B0 = 0.0d0
+```
+
+## Contributing
+We welcome contributions to this project.
+
+1. Fork it.
+2. Create your feature branch (```git checkout -b my-new-feature```).
+3. Commit your changes (```git commit -am 'Add some feature'```).
+4. Push to the branch (```git push origin my-new-feature```).
+5. Create new Pull Request.
+
+## License
+Released under the [MIT license](LICENSE).
