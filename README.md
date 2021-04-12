@@ -1,6 +1,7 @@
 # TARA
 
 [![build](https://github.com/RupakMukherjee/TARA/actions/workflows/main.yml/badge.svg)](https://github.com/RupakMukherjee/TARA/actions/workflows/main.yml)
+[![DOI](https://zenodo.org/badge/136785629.svg)](https://zenodo.org/badge/latestdoi/136785629)
 
 Multi dimensional Navier-Stokes equation solver using pseudo-spectral and WENO algorithms for spatial discretization and explicit time iterators.
 
