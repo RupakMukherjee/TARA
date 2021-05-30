@@ -47,5 +47,3 @@ The TARA simulation framework have been used for many different applications in 
 
 ![TARA Logo](/assets/img/logo.png)
 <!-- Format: ![Alt Text](url) -->
-
-You are visitor number: ![Visitor Count](https://profile-counter.glitch.me/RupakMukherjee/count.svg)
