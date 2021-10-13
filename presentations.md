@@ -1,5 +1,9 @@
 # Invited Talks
 
+#### 2021:
+1. _Chandra's Contribution in Plasma Astrophysics (Jawaharlal Nehru University, India), Remote e-conference,_ ["Time crystals in cold magnetized plasma"](https://drive.google.com/file/d/1bKalBoCVa4gT7nwisG2AvDlqo7Me9MlT/view?usp=sharing), Rupak Mukherjee, `October, 19, 2021`.
+
+
 #### 2020:
 1. _4th Asia-Pacific Conference on Plasma Physics (AAPPS-DPP2020), Remote e-conference,_ ["Pattern formation via asymmetric vortex mergers"](https://drive.google.com/file/d/19AxPmq8GtiQYp9g08Q06UO4Ozs3Mk2Nf/view), Rupak Mukherjee, Akanksha Gupta, Rajaraman Ganesh, `October, 29, 2020`.
 
