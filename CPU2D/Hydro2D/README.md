@@ -1,6 +1,3 @@
-All the codes in this folder are serial codes. There are no  parallel codes in this file.
-
-
 vorticity_wo_tracer.f95: incompressible single fluid with PS scheme (serial code + time solver AB / RK-4 + NO tracer particles) :: This is the most fundamental code!
 
 Two_demensional_Navier_Stokes_Vorticity_StreamFunction.f95: What is the difference between vorticity_wo_tracer.f95 code?
