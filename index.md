@@ -16,7 +16,7 @@ The TARA simulation framework have been used for many different applications in 
 <br/><br/>
 
 
-[Example Movie-1](https://youtu.be/YwlT4K7pnMs) / [Example Movie-2](https://youtu.be/E1fPny0DuRo) / [Example Movie-3](https://youtu.be/E1lOt9nsKMk) / [Example Movie-4](https://youtu.be/k6Lg6q7t_Kc) 
+[Sample Movie-1](https://youtu.be/YwlT4K7pnMs) / [Sample Movie-2](https://youtu.be/E1fPny0DuRo) / [Sample Movie-3](https://youtu.be/E1lOt9nsKMk) / [Sample Movie-4](https://youtu.be/k6Lg6q7t_Kc) 
 
 
 <br/><br/>
