@@ -7,6 +7,8 @@ Multi dimensional Navier-Stokes equation solver using pseudo-spectral and WENO a
 
 A detailed documentation can be found at https://rupakmukherjee.github.io/TARA/
 
+[Example Movie-1](https://youtu.be/YwlT4K7pnMs) [Example Movie-2](https://youtu.be/E1fPny0DuRo) [Example Movie-3](https://youtu.be/E1lOt9nsKMk) [Example Movie-4](https://youtu.be/k6Lg6q7t_Kc) 
+
 Installation
 ------------
 #### Prerequisites
