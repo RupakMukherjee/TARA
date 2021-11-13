@@ -1,6 +1,8 @@
 # User Manual
 
 TARA user manual is coming soon! Stay tuned!
+
+Here is an overview of how two dimensional weakly compressible hydrodynamic solver works!
 ```
 ! This is an OPENMP Parallel Benchmarked Compressible Viscous Neutral Fluid code, 
 ! using Pseudo-Spectral Method with Multiple Time Solvers.
