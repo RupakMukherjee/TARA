@@ -1,7 +1,7 @@
 # User Manual
 
 TARA user manual is coming soon! Stay tuned!
-
+```
 ! This is an OPENMP Parallel Benchmarked Compressible Viscous Neutral Fluid code, 
 ! using Pseudo-Spectral Method with Multiple Time Solvers.
 ! Here Adams-Bashforth Subroutine is Parallalised. Other Time Solvers are NOT Parallalised.
@@ -68,3 +68,4 @@ TARA user manual is coming soon! Stay tuned!
 !        [At Time = t + dt]     nk(kx,ky), ukx(kx,ky), uky(kx,ky)    
 !
 !------------------------------------------------------------------------------------------------------------------------ 
+```
