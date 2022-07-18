@@ -1,6 +1,6 @@
 # User Manual
 
-Click HERE to view the user manual of TARA!
+Click [HERE](https://github.com/RupakMukherjee/TARA/blob/9f1fc1c9bb657ea22f4ecfc09c32eaa7f5b5957f/TARA_user_manual_Shishir_B_Rupak_M.pdf) to view the user manual of TARA!
 
 Here is an overview of how two dimensional weakly compressible hydrodynamic solver works!
 ```
