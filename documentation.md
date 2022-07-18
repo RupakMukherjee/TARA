@@ -1,6 +1,6 @@
 # User Manual
 
-TARA user manual is coming soon! Stay tuned!
+Click HERE to view the user manual of TARA!
 
 Here is an overview of how two dimensional weakly compressible hydrodynamic solver works!
 ```
