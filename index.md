@@ -31,7 +31,7 @@ The TARA simulation framework have been used for many different applications in 
 
 # User Manual
 
-* TARA user manual is coming soon! [Stay tuned!](documentation.md)
+* TARA user manual can be found [HERE](documentation.md)
 
 <br/><br/>
 
